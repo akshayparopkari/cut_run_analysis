@@ -133,18 +133,9 @@ echo -e "\n#########################################################"
 echo "# Creating necessary folders and define input constants #"
 echo "#########################################################"
 
-
-# Uncomment to use Assembly 22, and comment out Assembly 21 lines below
-# ASSEMBLY="22"
-# CA_GENOME=$(find ~ -type f -name "ca22\.genome" -exec realpath {} +)
-# [[ ! -f "${CA_GENOME}" ]] && echo -e "\nC. albicans genome file not found. Please execute this command - grep \"^>\" path/to/C_albicans_SC5314_A22_current_chromosomes.fasta | sed 's/_C_albicans_SC5314\ (/\ /g' | sed 's/>//g' | cut -d' ' -f1,2 | column -t > ~/ca22.genome\n"
-# CA_REF="/home/aparopkari/ca22_bt2/ca22"
-# Effective genome size = total number of base pairs minus the total number of ‘N’
-# CA_GENOME_SIZE=28588771  # calculated via len - N from /home/aparopkari/ca22_genome/C_albicans_SC5314_A22_current_chromosomes_tidy_effective_genome_summary.txt
-
 ASSEMBLY="21"
 CA_GENOME=$(find ~ -type f -name "ca21\.genome" -exec realpath {} +)
-CA_REF="/home/aparopkari/ca21_genome/ca21_bt2/ca21"
+CA_REF=$(dirname "${0}")"/ca21"
 [[ ! -f "${CA_GENOME}" ]] && echo -e "\nC. albicans genome file not found. Please execute this command - grep "^>" /path/to/C_albicans_SC5314_A21_chromosomes.fasta | sed 's/_C_albicans_SC5314\ (/\ /g' | sed 's/>//g' | cut -d' ' -f1,2 | column -t > ~/ca21.genome\n"
 # Effective genome size = total number of base pairs minus the total number of ‘N’
 CA_GENOME_SIZE=14280188 # calculated via awk 'BEGIN{OFS="\t"} NR == 2 {print $2 - $7}' C_albicans_SC5314_A21_chromosomes_cleaned_nochrMT_counts.txt
