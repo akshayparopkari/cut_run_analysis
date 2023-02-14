@@ -1,3 +1,10 @@
+![LICENSE](https://img.shields.io/badge/license-BSD%203--Clause-brightgreen)
+
+If you use this tool, please cite us -
+
+Qasim, M. N., Arevalo, A. V., Paropkari, A. D., Ennis, C. L., Sindi, S. S., Nobile, C. J., Hernday, A. D. Genome-wide Profiling of Transcription Factor-DNA Binding Interactions in Candida albicans: A Comprehensive CUT&RUN Method and Data Analysis Workflow. J. Vis. Exp. (182), e63655, doi:[10.3791/63655](https://dx.doi.org/10.3791/63655) (2022).
+
+
 # CUT&RUN analysis workflow
 An analysis workflow for analyzing transcription factor-DNA binding data from CUT&RUN experiments.
 
