@@ -1,4 +1,4 @@
-![LICENSE](https://img.shields.io/badge/license-BSD%203--Clause-brightgreen)
+[![LICENSE](https://img.shields.io/badge/license-BSD%203--Clause-brightgreen)](https://github.com/akshayparopkari/cut_run_analysis/blob/main/LICENSE)
 
 If you use this tool, please cite us -
 
